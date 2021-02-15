@@ -165,6 +165,7 @@ public class MainActivity extends AppCompatActivity implements OnRecyclerViewIte
                 Article article = (Article) view.getTag();
                 if (!TextUtils.isEmpty(article.getUrl())) {
                     Log.e("clicked url", article.getUrl());
+                    Log.d("check","check  ");
                     Intent webActivity = new Intent(this, WebActivity.class);
                     webActivity.putExtra("url", article.getUrl());
                     startActivity(webActivity);
