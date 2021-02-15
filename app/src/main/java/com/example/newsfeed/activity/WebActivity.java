@@ -17,7 +17,7 @@ public class WebActivity extends AppCompatActivity{
         assert getSupportActionBar() != null;   //null check
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        final String url = getIntent().getStringExtra("url");
+        final String url = getIntent().getStringExtra("url ");
         WebView webView = findViewById(R.id.activity_web_wv);
         webView.loadUrl(url);
 
